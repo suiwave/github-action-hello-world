@@ -7,6 +7,9 @@ export default defineConfig({
     environment: 'node', // または 'jsdom'（ブラウザをエミュレートする場合）
     coverage: {
       reporter: ['text', 'json', 'html'],
+      thresholds: {
+        functions: 90,
+      }
     },
   },
 })
